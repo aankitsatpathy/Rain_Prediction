@@ -118,22 +118,10 @@ def View(df):
 View(dataframe)
 print(dataframe)
 
-# prompt: take 19 rows of weatherAus and just print the prediction
-
-print(y_pred[:19])
-
-# prompt: take 19 rows of weatherAus and just print the prediction and the factors  corrspondingly
-
-# Assuming your code is already executed and dataframe and y_pred are defined
-
-# Print the first 19 rows of the dataframe
-
-
-# Alternatively, print only the prediction and corresponding factors (assuming you want the actual factors from the original dataset)
 for i in range(19):
   print(f"Prediction: {y_pred[i][0]}, Factors: {dataset.iloc[i, [1,2,3,4,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]].values}")
 
-# prompt: take data from /content/test_set.xlsx and print the predicted rainfall
+
 
 # Load the test dataset
 test_dataset = pd.read_excel('/content/test_set.xlsx')
